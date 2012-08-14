@@ -1,0 +1,18 @@
+{application, sslrpc,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  crypto,
+                  public_key,
+                  ssl,
+                  cowboy
+                 ]},
+  {mod, { sslrpc_app, []}},
+  {env, [{port, 8443},
+         {client, true},
+         {server, false}]}
+ ]}.

@@ -1,0 +1,6 @@
+apps/sslrpc/ebin/
+*.beam
+logs/
+deps/
+rel/client/client/
+rel/server/server/
